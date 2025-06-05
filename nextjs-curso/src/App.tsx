@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, type JSX } from 'react'
 
 import './App.css'
 
@@ -9,7 +9,7 @@ import './App.css'
 // Al hacer clic en el botón, el nombre debe agregarse al array nombres.
 
 
-function App() {
+function App(): JSX.Element {
   const [nombre, setNombre] = useState<string>('')
   const [nombres, setNombres] = useState<string[]>([])
 
